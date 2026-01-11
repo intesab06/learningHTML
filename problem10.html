@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+</head>
+<body>
+    <h1>INIF.com-Book your ticket to Russia</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your Name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Enter age" required>
+        </div>
+        <div>
+            <label for="phoneno">Phone Number</label>
+            <input id="phoneno" type="tel" placeholder="Enter Number" required>
+        </div>
+        <div>
+            <label for="weeks">Package</label>
+            <select id="weeks">
+                <option value="1 week">1 week</option>
+                <option value="2 weeks">2 weeks</option>
+                <option value="3 weeks">3 weeks</option>
+                <option value="4 weeks">4 weeks</option>
+            </select>
+        </div>
+        <div>
+            <p>Favourite Games wanted to play</p>
+            <input id="football" type="radio" name="Favourite Sports" value="football">
+            <label for="football">Football</label>
+            <input id="cricket" type="radio" name="Favourite Sports" value="cricket">
+            <label for="cricket">Cricket</label>
+            <input id="badminton" type="radio" name="Favourite Sports" value="badminton">
+            <label for="badminton">Badminton</label>
+        </div>
+        <div>
+            <label for="about">Any Preferences</label>
+            <textarea id="about" placeholder="Tell us is detail..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+</form>
+</body>
+</html>

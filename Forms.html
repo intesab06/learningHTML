@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>learning HTML Form</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter Name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter Password" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date" required>
+        </div>
+        <div>
+            <label for="color">Favorite Color:</label>
+            <select id="color">
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="blue">Blue</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+        <div>
+            <p>Favourite Sports</p>
+            <input id="football" type="radio" name="Favourite Sports" value="football">
+            <label for="football">Football</label>
+            <input id="cricket" type="radio" name="Favourite Sports" value="cricket">
+            <label for="cricket">Cricket</label>
+            <input id="badminton" type="radio" name="Favourite Sports" value="badminton">
+            <label for="badminton">Badminton</label>
+        </div>
+        <div>
+            <p>Hobbies</p>
+            <input id="reading" type="checkbox" name="Hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input id="traveling" type="checkbox" name="Hobbies" value="traveling">
+            <label for="traveling">Traveling</label>
+            <input id="gaming" type="checkbox" name="Hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+        </div>
+        <div>
+            <label for="about">About You</label>
+            <textarea id="about" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+</form>
+</body>
+</html>
