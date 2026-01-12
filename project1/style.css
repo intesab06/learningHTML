@@ -1,0 +1,105 @@
+/* Color Palette & Variables */
+:root {
+    --primary-green: #2d6a4f;    /* Dark Forest Green */
+    --accent-green: #40916c;     /* Medium Green */
+    --bg-grey: #f4f4f4;          /* Light Modern Grey */
+    --white: #ffffff;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Set global background to Grey */
+body {
+    background-color: var(--bg-grey);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header stays white for contrast */
+header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px; /* Adjusted for better fit */
+    width: auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: var(--accent-green);
+}
+
+/* Main Section - Grey Background */
+main {
+    min-height: 85vh;
+    padding: 50px 10%;
+    background-color: var(--bg-grey); /* Specifically setting grey here */
+}
+
+/* The list container */
+#navigation_cmka37rmg00003j772qqkd8o6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    list-style: none;
+}
+
+/* Cards (White cards on Grey background look very clean) */
+.category-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-green);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-bottom: 4px solid var(--accent-green);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
